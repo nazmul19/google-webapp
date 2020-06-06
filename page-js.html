@@ -1,0 +1,14 @@
+<script>
+    var modalInstance = null;
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+    function certificateGen(i){
+        var id = "#modal_"+i;
+        console.log(id);
+        var elem= document.querySelector(id);
+        var instance = M.Modal.init(elem);
+        instance.open();
+    }
+</script>
